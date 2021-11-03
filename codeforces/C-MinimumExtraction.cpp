@@ -18,6 +18,7 @@ void Solution() {
         long long ans = mini;
         for (long long i = 0; i < n; i++)
         {
+            
             arr[i]-=mini;
         }
         if(n>1){
