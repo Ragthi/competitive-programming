@@ -7,6 +7,7 @@ using ll = int64_t;
 
 void Solution() {
     long long n;
+    
         cin>>n;
         vector<long long> arr(n);
         long long mini = 1e9+7;
