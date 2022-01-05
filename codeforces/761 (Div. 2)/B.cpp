@@ -1,33 +1,27 @@
 
 #include "bits/stdc++.h"
-#include<map>
-#include<vector>
 using namespace std;
 #define dbg(...)
 using ll = int64_t;
-int mod = 1e9 +7;
 
 void Solution() {
-    int n,m;
-    cin>>n>>m;
-    int v,ans=0;
-    for (int i = 0; i < m; i++)
-    {
-        cin>>v>>v>>v;
-        //cout<<"ans "<<ans<<" "<<v<<endl;
-        ans = (ans | v);
-        
+    int n;
+    cin>>n;
+            
+    n--;
+    int temp = n;
+    if(n%2==0){
+        n=n/2;
+        if(n%2!=0){
+            cout<<(n-2)<<" "<<(n+2)<<" "<<1<<"\n";
+        }else{
+            cout<<(n-1)<<" "<<(n+1)<<" "<<1<<"\n";
+        }
+    }else{
+        cout<<(n)/2<<" "<<(n/2)+1<<" "<<1<<"\n";
     }
-    ans %=mod;
-    
-    for (int i = 0; i < n-1; i++)
-    {
-        ans = (ans*2)%mod;
-    }
-    cout<<ans<<endl;
     
     
-
 }
 
 int main() {
@@ -42,4 +36,3 @@ int main() {
     cerr << "Time:" << 1000 * ((double)clock()) / (double)CLOCKS_PER_SEC << "ms\n";
     return 0;
 }
-//C:\Users\sethi\Desktop\Desktop\competitive-programming
