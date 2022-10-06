@@ -1,0 +1,28 @@
+#include<iostream>
+#include<vector>
+#include "bits/stdc++.h"
+using namespace std;
+#define dbg(...)
+using ll = int64_t;
+
+void Solution(int number) {
+	
+}
+
+int main() {
+    cin.tie(nullptr)->sync_with_stdio(false);
+#ifndef ONLINE_JUDGE
+    freopen("C:\\Users\\sethi\\Desktop\\Desktop\\competitive-programming\\input.txt", "r", stdin);
+    freopen("C:\\Users\\sethi\\Desktop\\Desktop\\competitive-programming\\output.txt", "w", stdout);
+#endif
+    cout << fixed << setprecision(12);
+    ll tc=1; cin >> tc; 
+	for (int i = 0; i < tc; i++)
+	{
+		Solution(i+1);
+	}
+	
+    
+    cerr << "Time:" << 1000 * ((double)clock()) / (double)CLOCKS_PER_SEC << "ms\n";
+    return 0;
+}
